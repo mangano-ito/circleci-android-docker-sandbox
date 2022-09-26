@@ -1,0 +1,16 @@
+{
+    "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+    "regexManagers": [
+        {
+            "fileMatch": [
+                ".circleci/config.yml"
+            ],
+            "matchStrings": [
+                "executor:\\s+name:\\s*android/android-docker(\\s+resource-class:.+)?\\s+tag:\\s*(?<currentValue>[0-9.]+)"
+            ],
+            "depNameTemplate": "cimg/android",
+            "datasourceTemplate": "docker",
+            "versioningTemplate": "docker"
+        }
+    ]
+}
