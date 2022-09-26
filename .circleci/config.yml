@@ -5,10 +5,11 @@ jobs:
   build:
     executor:
       name: android/android-docker
-      resource-class: xlarge
+      resource-class: small
       tag: 2022.08.1
     steps:
       - checkout
+      
 
 workflows:
   android-workflow:
