@@ -1,0 +1,17 @@
+name: sandbox1
+
+on:
+  workflow_dispatch:
+
+env:
+  TZ: Asia/Tokyo
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Dump variable value
+        run: echo "Variable = ${{ vars.MY_VARIABLE_1 }}"
