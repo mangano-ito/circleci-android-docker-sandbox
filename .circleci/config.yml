@@ -6,7 +6,7 @@ jobs:
     executor:
       name: android/android-docker
       resource-class: small
-      tag: 2022.08.1
+      tag: 2022.12.1
     steps:
       - checkout
       
